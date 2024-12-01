@@ -187,8 +187,12 @@
 								<div class="table__cell"></div>
 							</div>
 						</div>
+						<div class="table__body" id="patient-table-body">
+							<!-- Dynamically added rows will appear here -->
+						</div>
+						<script src="js/display.js"></script>
 						<div class="table__body">
-							<div class="table__row">
+							<div class="table__row" id="row1">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-3.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Olivia Wilson</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/female.png" alt="" title=""/></div>
@@ -203,12 +207,12 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							<div class="table__row">
+							<div class="table__row" id="row2">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-1.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Oliver Barnes</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/male.png" alt="" title=""/></div>
@@ -223,13 +227,13 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
 							
-							<div class="table__row">
+							<div class="table__row" id="row3">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Maya Cooper</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/female.png" alt="" title=""/></div>
@@ -244,12 +248,12 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							<div class="table__row">
+							<div class="table__row" id="row4">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-4.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Adam King</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/male.png" alt="" title=""/></div>
@@ -264,13 +268,13 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
 							
-							<div class="table__row">
+							<div class="table__row" id="row5">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-5.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Julia Henderson</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/female.png" alt="" title=""/></div>
@@ -285,12 +289,12 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							<div class="table__row">
+							<div class="table__row" id="row6">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-6.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Sienna Butler</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/female.png" alt="" title=""/></div>
@@ -305,13 +309,13 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
 							
-							<div class="table__row">
+							<div class="table__row" id="row7">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-7.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Robert Davis</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/male.png" alt="" title=""/></div>
@@ -326,12 +330,12 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							<div class="table__row">
+							<div class="table__row" id="row8">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-1.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Billy Ross</div>
 								<div class="table__cell"><img src="images/icons/icons-20-gray/male.png" alt="" title=""/></div>
@@ -346,11 +350,12 @@
 										<ul>
 											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="#" class="delete-row">Delete</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
+							
 
 
 						</div>
@@ -964,6 +969,7 @@
 <script src="js/daterangepicker.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/jquery.dashboard-custom.js"></script>
+
 </body>
 
 <!-- Mirrored from smarttemplates.net/medikit/dashboard__patients.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2019 00:52:40 GMT -->

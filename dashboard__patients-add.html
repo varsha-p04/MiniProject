@@ -177,43 +177,46 @@
 			
 				</div>		
 			</div>	
-			<form>
-			<div class="grid__row grid__row--margin">
+			<form id="patient-form">
+				<div class="grid__row grid__row--margin">
+					<div class="grid__col grid__col--13 grid__col--margin">
+						<div class="form-upload" id="dropzone">
+							<div class="form-upload__message dz-message needsclick">
+								Drop image here or click to upload.
+							</div>
+						</div>
+					</div>
+			
 				
-				<div class="grid__col grid__col--13 grid__col--margin">
-					<div class="form-upload" id="dropzone">
-						<div class="form-upload__message dz-message needsclick">
-						Drop image here or click to upload.
+					<div class="grid__col grid__col--13 grid__col--margin">
+						<div class="grid__row">
+							<div class="grid__col grid__col--margin">
+								<label class="form__label">FIRST NAME *</label>
+								<input name="fname" id="fname" class="form__input" required type="text" />    
+							</div>
 						</div>
-					</div>
-				</div>
-				
-				<div class="grid__col grid__col--13 grid__col--margin">
-					<div class="grid__row">  
-						<div class="grid__col grid__col--margin">
-							<label class="form__label">FIRST NAME *</label>
-							<input name="fname" id="fname" class="form__input required" type="text" />	
+			
+						<div class="grid__row">
+							<div class="grid__col grid__col--margin">
+								<label class="form__label">EMAIL *</label>
+								<input name="email" id="email" class="form__input  email" required type="text" />    
+							</div>
 						</div>
-					</div>
-					<div class="grid__row">
-						<div class="grid__col grid__col--margin">
-							<label class="form__label">EMAIL *</label>
-							<input name="email" id="email" class="form__input required email" type="text" />	
+			
+						<div class="grid__row">
+							<div class="grid__col grid__col--margin">
+								<label class="form__label">GENDER</label>
+								<div class="form__select">
+									<select name="gender" id="gender" required>
+										<option>Choose a gender</option>
+										<option value="1">Female</option>
+										<option value="2">Male</option>
+									</select>
+								</div>        
+							</div>
 						</div>
-					</div>
-					<div class="grid__row">
-						<div class="grid__col grid__col--margin">
-							<label class="form__label">GENDER</label>
-							<div class="form__select">
-								<select name="gender" id="gender">
-								<option>Choose a gender</option>
-								<option value="1">Female</option>
-								<option value="2">Male</option>
-								</select>
-							</div>		
-						</div>
-					</div>
-					<div class="grid__row">
+			
+					 <div class="grid__row">
 						<div class="grid__col grid__col--margin mb0">
 							<label class="form__label">LANGUAGES</label>
 							<select class="custom-select" name="languages" multiple="multiple">
@@ -223,36 +226,38 @@
 								<option value="Mandarin">Mandarin</option>
 								<option value="Spanish">Spanish</option>
 								<option value="Italian">Italian</option>
-							</select>		
+							</select>        
 						</div>
 					</div>
 				</div>
+		
 				
 				<div class="grid__col grid__col--13 grid__col--margin">
 					<div class="grid__row">  
 						<div class="grid__col grid__col--margin">
 							<label class="form__label">LAST NAME *</label>
-							<input name="lname" id="lname" class="form__input required" type="text" />
+							<input name="lname" id="lname" class="form__input" required type="text" />
 						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<label class="form__label">PHONE *</label>
-							<input name="phone" id="phone" class="form__input required" type="text" />
+							<input name="phone" id="phone" class="form__input" required type="text" />
 						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<label class="form__label">DATE OF BIRTH</label>
-							<input type="text" name="birthday" class="form__input" value="02/03/1983" />
+							<input type="text" id="brdy" name="birthday" class="form__input" value="02/03/1983" />
 						</div>
 					</div>
+		
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin mb0">
 							<label class="form__label">NATIONALITY</label>
 							<select class="custom-select" name="nationality">
 								<option value="United States">United States</option>
-								<option value="United Kingdom">United Kingdom</option>
+								<option value="United Kingdom">United Kingdom</option>		
 								<option value="Afghanistan">Afghanistan</option>
 								<option value="Albania">Albania</option>
 								<option value="Algeria">Algeria</option>
@@ -502,7 +507,7 @@
 			<div class="grid__row grid__row--margin">
 				<div class="grid__col grid__col--13 grid__col--margin">
 							<label class="form__label">COUNTRY</label>
-							<select class="custom-select" name="country">
+							<select class="custom-select" name="country" >
 								<option value="United States">United States</option>
 								<option value="United Kingdom">United Kingdom</option>
 								<option value="Afghanistan">Afghanistan</option>
@@ -747,29 +752,31 @@
 							</select>
 				</div>
 				<div class="grid__col grid__col--13 grid__col--margin">
-							<label class="form__label">CITY</label>
-							<select class="custom-select" name="city">
-								<option value="Los Angeles">Los Angeles</option>
-								<option value="Washington">Washington</option>
-								<option value="New York">New York</option>
-								<option value="Chicago">Chicago</option>
-							</select>
+					<label class="form__label">CITY</label>
+					<select class="custom-select" name="city" id="city">
+						<option value="Los Angeles">Los Angeles</option>
+						<option value="Washington">Washington</option>
+						<option value="New York">New York</option>
+						<option value="Chicago">Chicago</option>
+					</select>
 				</div>
+		
 				<div class="grid__col grid__col--13 grid__col--margin">
-							<label class="form__label">ZIP</label>
-							<input name="phone" id="phone" class="form__input required" type="text" />
+					<label class="form__label">ZIP</label>
+					<input name="zip" id="zip" class="form__input " required type="text" />
+				</div>		
+			</div>
+			<div class="grid__row grid__row--margin">
+				<div class="grid__col grid__col--margin">
+					<label class="form__label">ADDRESS *</label>
+					<input name="address" id="address" class="form__input "required type="text" />
 				</div>
 			</div>
 			<div class="grid__row grid__row--margin">
 				<div class="grid__col grid__col--margin">
-					<label class="form__label">ADRESS *</label>
-					<input name="adress" id="adress" class="form__input required" type="text" />
+					<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="ADD PATIENT" />    
 				</div>
-			</div>
-			<div class="grid__row grid__row--margin">
-				<div class="grid__col grid__col--margin">
-					<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="ADD PATIENT" />	
-				</div>
+	
 			</div>
 			</form>
 
@@ -1050,11 +1057,11 @@
 						</div>
 						<div class="grid__col grid__col--13 grid__col--margin">
 									<label class="form__label">DATE OR BIRTH</label>
-									<input type="text" name="birthday" class="form__input" value="02/03/1983" />
+									<input type="text" name="birthday" class="form__input" value="02/03/1983" required />
 						</div>
 						<div class="grid__col grid__col--13 grid__col--margin">
 									<label class="form__label">PHONE</label>
-									<input type="text" name="appphone" class="form__input" value="" />
+									<input type="text" name="appphone" class="form__input" value=""  required/>
 						</div>
 					</div>
 					<div class="grid__row  grid__row--margin">
@@ -1065,7 +1072,7 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--12 grid__col--margin">
 							<label class="form__label">LOCATION</label>
-							<select class="custom-select" name="applocation">
+							<select class="custom-select" name="applocation" required>
 								<option value="Los Angeles">H Clinic, Houston Street</option>
 								<option value="Washington">Hostpital Washington</option>
 								<option value="New York">Clinic 54 New York</option>
@@ -1074,7 +1081,7 @@
 						</div>
 						<div class="grid__col grid__col--12 grid__col--margin">
 									<label class="form__label">DATE &amp; TIME</label>
-									<input type="text" name="timepicker" class="form__input" value="" />
+									<input type="text" name="timepicker" class="form__input" value=""  required/>
 						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
@@ -1435,6 +1442,7 @@
 <script src="js/daterangepicker.min.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/jquery.dashboard-custom.js"></script>
+<script src="js/add.js"></script>
 </body>
 
 <!-- Mirrored from smarttemplates.net/medikit/dashboard__patients-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2019 00:52:40 GMT -->
